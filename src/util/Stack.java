@@ -2,10 +2,8 @@ package util;
 
 public class Stack {
     private Element top;
-    void push(Element e){
-        Element tmp = top;
-        top = e;
-        e.setNext(tmp);
+    void push(Object o){
+        Element e = new Element(o,top);
     }
 
     void pop(){
@@ -28,8 +26,14 @@ public class Stack {
         return new Examinator(top);
     }
 
-    public int size(){
-        return tab().length;
+    public int size(){  //todo
+        int size = 0;
+        Examinator ex = examinator();
+        while(ex.hasNext()){
+            size++;
+            ex.setCurrent(ex.getCurrent().getNext());
+        }
+        return size;
     }
 
 }
