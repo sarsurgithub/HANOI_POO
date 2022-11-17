@@ -16,9 +16,14 @@ public class Examinator {
     }
 
     public Object next(){
-        return current.getNext().getData();
+        if(!this.hasNext()){
+            throw new RuntimeException("null value");
+        }
+        Object o = current.getData();
+        current = current.getNext();
+        return o;
     }
     public boolean hasNext(){
-        return current.getNext()!= null;
+        return current != null;
     }
 }
