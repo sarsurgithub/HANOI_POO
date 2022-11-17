@@ -7,8 +7,16 @@ public class Examinator {
         current = el;
     }
 
-    public Element next(){
-        return current.getNext();
+    public void setCurrent(Element current){
+        this.current = current;
+    }
+
+    public Element getCurrent(){
+        return current;
+    }
+
+    public Object next(){
+        return current.getNext().getData();
     }
     public boolean hasNext(){
         return current.getNext()!= null;
