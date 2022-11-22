@@ -2,37 +2,47 @@ package util;
 
 public class Stack {
     private Element top;
-    void push(Object o){
-        Element e = new Element(o,top);
+    private int size;
+
+    void push(Object o) {
+        top = new Element(o, top);
+        ++size;
     }
 
-    void pop(){
+    Object pop() {
+        if (top == null) {
+            throw new RuntimeException("The stack is empty");
+        }
+        Object o = top.getData();
         top = top.getNext();
+        --size;
+        return o;
     }
-    public String toString(){
-        Element el = top;
+
+    public String toString() {
+        Examinator ex = examinator();
         StringBuilder sb = new StringBuilder();
-        while (el.getNext() != null){
-            sb.append(el.getData());
+        while (ex.hasNext()) {
+            sb.append(ex.next());
         }
         return sb.toString();
     }
 
-    public Object[] tab(){ //t
-        return null;
+    public Object[] stackToArray() { //t
+        Object tab[] = new Object[size];
+        int i = 0;
+        Examinator ex = examinator();
+        while(ex.hasNext()){
+            tab[i++] = ex.next();
+        }
+        return tab;
     }
 
-    public Examinator examinator(){
+    public Examinator examinator() {
         return new Examinator(top);
     }
 
-    public int size(){  //todo
-        int size = 0;
-        Examinator ex = examinator();
-        while(ex.hasNext()){
-            size++;
-            ex.setCurrent(ex.getCurrent().getNext());
-        }
+    public int size() {  //todo
         return size;
     }
 
