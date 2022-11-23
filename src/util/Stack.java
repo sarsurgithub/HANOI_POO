@@ -4,12 +4,12 @@ public class Stack {
     private Element top;
     private int size;
 
-    void push(Object o) {
+    public void push(Object o) {
         top = new Element(o, top);
         ++size;
     }
 
-    Object pop() {
+    public Object pop() {
         if (top == null) {
             throw new RuntimeException("The stack is empty");
         }
