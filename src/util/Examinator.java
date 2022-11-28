@@ -1,5 +1,7 @@
 package util;
 
+import java.util.EmptyStackException;
+
 /**
  * Classe qui implémente l'itérateur de la pile
  *
@@ -22,11 +24,11 @@ public class Examinator {
      * Méthode qui rend l'élément suivant de l'itérateur
      *
      * @return retourne l'Objet stocké dans l'élément suivant de l'itérateur
-     * @throws RuntimeException si c'est le dernier élément sur la pile
+     * @throws EmptyStackException s'il n'y a plus d'élément à itérer
      */
     public Object next() {
         if (!hasNext()) {
-            throw new RuntimeException("Error : null value.");
+            throw new EmptyStackException();
         }
         Object o = current.data;
         current = current.next;
@@ -35,6 +37,7 @@ public class Examinator {
 
     /**
      * Méthode qui vérifie si l'élément sur lequel l'itérateur se réfère a un élément après
+     *
      * @return rend true si l'itérateur n'est pas en fin de la pile, false sinon
      */
     public boolean hasNext() {

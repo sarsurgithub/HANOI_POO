@@ -1,5 +1,7 @@
 package util;
 
+import java.util.EmptyStackException;
+
 /**
  * Classe qui implémente la pile
  *
@@ -24,11 +26,11 @@ public class Stack {
      * Permet de désempiler un objet du sommet de la pile
      *
      * @return retourne l'objet désempilé
-     * @throws RuntimeException si la pile est vide
+     * @throws EmptyStackException si la pile est vide
      */
     public Object pop() {
         if (top == null) {
-            throw new RuntimeException("Error: The stack is empty");
+            throw new EmptyStackException();
         }
         Object o = top.data;
         top = top.next;
@@ -46,7 +48,7 @@ public class Stack {
     public String toString() {
         Examinator ex = examinator();
         StringBuilder sb = new StringBuilder();
-        sb.append("[");
+        sb.append("[ ");
         while (ex.hasNext()) {
             sb.append("<").append(ex.next()).append(">").append(" ");
         }
@@ -58,10 +60,11 @@ public class Stack {
      * Permet d'obtenir un tableau d’objets représentant
      * l’état actuel de la pile (l’indice 0 contenant l’élément placé au
      * sommet de la pile)
+     *
      * @return le tableau d'objet représentant l'état actuel de la pile
      */
-    public Object[] stackToArray() { //t
-        Object tab[] = new Object[size];
+    public Object[] stackToArray() {
+        Object[] tab = new Object[size];
         int i = 0;
         Examinator ex = examinator();
         while (ex.hasNext()) {
@@ -72,6 +75,7 @@ public class Stack {
 
     /**
      * Permet de retourner un itérateur le sur le sommet de la pile
+     *
      * @return un itérateur
      */
     public Examinator examinator() {
@@ -81,9 +85,9 @@ public class Stack {
     /**
      * Permet de retourner la taille de la pile
      *
-     * @return un int qui correspond à la taille de la pile
+     * @return la taille de la pile
      */
-    public int size() {  //todo
+    public int size() {
         return size;
     }
 
