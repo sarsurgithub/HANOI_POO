@@ -147,6 +147,8 @@ public class TestStack {
         System.out.println("Check with incorrect array: " +
                 (testResultS(Arrays.toString(s.stackToArray()), incorrectArray).equals(failed) ? passed : failed));
 
+        Stack empty = creatTestStack(0);
+        System.out.println("Representation of empty stack to array: " + Arrays.toString(empty.stackToArray()));
     }
 
     /**
