@@ -1,7 +1,10 @@
 package hanoi;
 
 import util.Stack;
-
+/**
+ * Classe qui implémente les tours de hanoi et ses méthodes pour la résolution ainsi que l'affichage
+ * @author Bogale Tegest & Jallon Sarah
+ */
 public class Hanoi {
     private Stack[] needles = new Stack[3];
     private HanoiDisplayer hanoiDisplayer;

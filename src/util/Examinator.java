@@ -1,29 +1,43 @@
 package util;
 
+/**
+ * Classe qui implémente l'itérateur de la pile
+ *
+ * @author Bogale Tegest & Jallon Sarah
+ */
 public class Examinator {
     private Element current;
 
-    public Examinator(Element el){
+    /**
+     * Constructeur, avec l'élément de départ de l'itérateur.
+     * À sa création, l'itérateur se réfère au début de la stack (avant le 1er élément).
+     *
+     * @param el élément sur lequel l'itérateur se réfère
+     */
+    Examinator(Element el) {
         current = el;
     }
 
-    public void setCurrent(Element current){
-        this.current = current;
-    }
-
-    public Element getCurrent(){
-        return current;
-    }
-
-    public Object next(){
-        if(!this.hasNext()){
-            throw new RuntimeException("null value");
+    /**
+     * Méthode qui rend l'élément suivant de l'itérateur
+     *
+     * @return retourne l'Objet stocké dans l'élément suivant de l'itérateur
+     * @throws RuntimeException si c'est le dernier élément sur la pile
+     */
+    public Object next() {
+        if (!hasNext()) {
+            throw new RuntimeException("Error : null value.");
         }
-        Object o = current.getData();
-        current = current.getNext();
+        Object o = current.data;
+        current = current.next;
         return o;
     }
-    public boolean hasNext(){
+
+    /**
+     * Méthode qui vérifie si l'élément sur lequel l'itérateur se réfère a un élément après
+     * @return rend true si l'itérateur n'est pas en fin de la pile, false sinon
+     */
+    public boolean hasNext() {
         return current != null;
     }
 }
