@@ -27,6 +27,8 @@ public class TestStack {
         System.out.println();
         System.out.println("************************ TEST stackToArray() *************************************");
         testStackToArray();
+        System.out.println("************************ TEST next() *************************************");
+        testNext();
 
     }
 
@@ -107,6 +109,29 @@ public class TestStack {
         }
         System.out.println("The iterator doesn't overflow : "
                 + (testResult(cnt, s.size()).equals(failed) ? passed : failed));
+
+    }
+
+    /**
+     * Test le fonctionnement de hasNext()
+     */
+
+    private static void testNext() {
+        Stack s = creatTestStack(3);
+        Examinator e = s.examinator();
+
+        System.out.println("Printing stack values using next() works as expected: ");
+        for (int i = 0; i < s.size(); ++i) {
+            System.out.println(e.next());
+        }
+        System.out.println("If the iterator overflow an EmptyStackException is raised(null): ");
+        try {
+            for (int j = 0; j < s.size() + 3; ++j) {
+                System.out.println(e.next());
+            }
+        } catch (EmptyStackException ex) {
+            System.out.println(ex.getMessage());
+        }
 
     }
 
