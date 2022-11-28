@@ -9,6 +9,7 @@ public class Stack {
         ++size;
     }
 
+
     public Object pop() {
         if (top == null) {
             throw new RuntimeException("The stack is empty");
