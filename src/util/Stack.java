@@ -92,11 +92,12 @@ public class Stack {
     }
 
     /**
-     *Permet de savoir si la stack est vide
+     * Permet de savoir si la stack est vide
+     *
      * @return vrai si vide, faux sinon
      */
-    public boolean isEmpty(){
-        return size() == 0;
+    public boolean isEmpty() {
+        return size == 0;
     }
 
 }

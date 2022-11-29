@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author Bogale Tegest & Jallon Sarah
  */
 public class TestHanoi {
-    private static HanoiDisplayer hanoiDisplayer = new HanoiDisplayer();
+    private static final HanoiDisplayer hanoiDisplayer = new HanoiDisplayer();
     private static Hanoi hanoi;
 
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class TestHanoi {
      * Test la bonne construction de la tour de hanoi
      */
     private static void testHanoi() {
-        hanoi = new Hanoi(5);
+        hanoi = new Hanoi(4);
         System.out.println("Hanoi : ");
         hanoiDisplayer.display(hanoi);
 
@@ -52,7 +52,7 @@ public class TestHanoi {
      * Teste l'algorithme pour la résolution et la méthode finished()
      */
     private static void testSolve() {
-        hanoi = new Hanoi(5);
+        hanoi = new Hanoi(4);
         System.out.println("Solve : ");
         hanoi.solve();
         System.out.println("When solved the value of finished is true : " + hanoi.finished());

@@ -11,10 +11,10 @@ public class Hanoi {
     private final Stack[] needles = new Stack[3];
     private final HanoiDisplayer hanoiDisplayer;
     private final int disks;
-    private int cntTurn = 0;
+    private int cntTurn;
 
     /**
-     * Constructeur pour l'affichage dans la GUI
+     * Constructeur pour l'affichage dans le GUI
      *
      * @param disks          nombre de disques à déplacer
      * @param hanoiDisplayer instance de hanoi displayer pour l'affichage
