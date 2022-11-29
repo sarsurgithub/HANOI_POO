@@ -90,7 +90,7 @@ public class Hanoi {
      * @return vrai si terminée, faux sinon
      */
     public boolean finished() {
-        return needles[0].size() == 0 && needles[1].size() == 0 && needles[2].size() == disks;
+        return needles[0].isEmpty() && needles[1].isEmpty() && needles[2].size() == disks;
 
     }
 
