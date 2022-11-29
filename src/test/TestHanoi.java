@@ -4,7 +4,7 @@ import hanoi.Hanoi;
 
 public class TestHanoi {
     public static void main(String[] args) {
-        Hanoi hanoi = new Hanoi(5);
+        Hanoi hanoi = new Hanoi(64);
         hanoi.solve();
     }
 }

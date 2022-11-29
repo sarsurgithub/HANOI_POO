@@ -1,6 +1,5 @@
 package hanoi;
 
-import util.Examinator;
 import util.Stack;
 /**
  * Classe qui implémente les tours de hanoi et ses méthodes pour la résolution ainsi que l'affichage
@@ -22,13 +21,13 @@ public class Hanoi {
      * @param dest baton de destination
      * @param n nombre de disques à déplacer
      */
-    public void move(Stack src, Stack by, Stack dest, int n) { //t
+    public void move(Stack src, Stack by, Stack dest, int n) {
         if (n < 1)
             return;
         move(src, dest, by, n - 1);
         dest.push(src.pop());
-        hanoiDisplayer.display(this);
         ++cntTurn;
+        hanoiDisplayer.display(this);
         move(by, src, dest, n - 1);
     }
 
@@ -36,10 +35,13 @@ public class Hanoi {
      * Constructeur pour l'affichage dans la GUI
      * @param disks nombre de disques à déplacer
      * @param hanoiDisplayer instance de hanoi displayer pour l'affichage
+     * @throws RuntimeException si on ne donne pas de disques
      */
-    public Hanoi(int disks, HanoiDisplayer hanoiDisplayer) { //s
+    public Hanoi(int disks, HanoiDisplayer hanoiDisplayer) {
+        if(disks < 1) throw new RuntimeException();
         this.disks = disks;
         this.hanoiDisplayer = hanoiDisplayer;
+
         for(int i = 0; i < needles.length; ++i){
             needles[i] = new Stack();
         }
@@ -52,7 +54,7 @@ public class Hanoi {
      * Constructeur pour l'affichage dans la console
      * @param disks nombre de disques à déplacer
      */
-    public Hanoi(int disks) { //t
+    public Hanoi(int disks) {
         this(disks, new HanoiDisplayer());
 
     }
@@ -63,22 +65,14 @@ public class Hanoi {
      */
     public void solve() { //s
         hanoiDisplayer.display(this);
-        ++cntTurn;
-        if (disks > 0) {
-            move(needles[0], needles[2], needles[1], disks - 1);
-            needles[2].push(needles[0].pop());
-            hanoiDisplayer.display(this);
-            ++cntTurn;
-            move(needles[1], needles[0], needles[2], disks - 1);
-
-        }
+        move(needles[0], needles[1], needles[2], disks);
     }
 
     /**
      * Permet d'obtenir le statut courant des tours
      * @return un tableau de tableaux représentant les 3 batons et leurs contenus
      */
-    public int[][] status() { //t
+    public int[][] status() {
         Object[][] hanoiStatus = new Object[needles.length][];
         int[][] t = new int[hanoiStatus.length][];
         for (int i = 0; i < t.length; ++i) {
@@ -95,7 +89,7 @@ public class Hanoi {
      * Permet de savoir la résolution du problème des tours de hanoi est terminée
      * @return vrai si terminée, faux sinon
      */
-    public boolean finished() { //s
+    public boolean finished() {
         return needles[0].size() == 0 && needles[1].size() == 0 && needles[2].size() == disks;
 
     }
@@ -105,7 +99,7 @@ public class Hanoi {
      * problème de Hanoi
      * @return le nombre de l'étape courante
      */
-    public int turn() { //t
+    public int turn() {
         return cntTurn;
     }
 
