@@ -62,6 +62,7 @@ public class Stack {
      * sommet de la pile)
      *
      * @return le tableau d'objet représentant l'état actuel de la pile
+     * @throws EmptyStackException s'il n'y a plus d'élément à itérer
      */
     public Object[] stackToArray() {
         Object[] tab = new Object[size];

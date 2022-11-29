@@ -38,6 +38,7 @@ public class Hanoi {
      * Constructeur pour l'affichage dans la console
      *
      * @param disks nombre de disques à déplacer
+     * @throws RuntimeException si le nombre de disques est inférieur à 1 ou si hanoiDisplayer est null
      */
     public Hanoi(int disks) {
         this(disks, new HanoiDisplayer());

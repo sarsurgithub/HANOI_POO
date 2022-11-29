@@ -15,14 +15,19 @@ public class Main {
      *
      */
     public static void main(String[] args) {
-        if (args.length == 1) {
-            Hanoi hanoi = new Hanoi(Integer.parseInt(args[0]));
-            hanoi.solve();
-        } else if (args.length == 0) {
-            new JHanoi();
-        } else {
-            System.out.println("To use the interface run the program without arguments");
-            System.out.println("To use the console run the program with the number of disks");
+        try{
+            if (args.length == 1) {
+                Hanoi hanoi = new Hanoi(Integer.parseInt(args[0]));
+                hanoi.solve();
+            } else if (args.length == 0) {
+                new JHanoi();
+            } else {
+                System.out.println("To use the interface run the program without arguments");
+                System.out.println("To use the console run the program with the number of disks");
+            }
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
         }
+
     }
 }

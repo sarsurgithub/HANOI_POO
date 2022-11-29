@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="29ed6fcd-5f40-48a4-b9ab-c20b7e1c19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hanoi/Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/Hanoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml.sly" beforeDir="false" afterPath="$PROJECT_DIR$/uml.sly" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestStack">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LABO07" />
@@ -100,8 +99,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestStack" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestStack" />
         <item itemvalue="Application.TestHanoi" />
       </list>
     </recent_temporary>
