@@ -5,11 +5,10 @@ import java.sql.SQLOutput;
 public class HanoiDisplayer {
 
     /**
-     *
-     * @param h
+     *Permet d'afficher l'état courant du problème de Hanoi dans la console
+     * @param h instance de Hanoi que nous souhaitons afficher
      */
-    public void display(Hanoi h){ //s
-        //afficher en utilisant status
+    public void display(Hanoi h){
         System.out.println("-- Turn: " + h.turn());
         System.out.println(h);
     }
