@@ -97,7 +97,7 @@ public class Hanoi {
      */
     public boolean finished() {
         return needles[0].isEmpty() && needles[1].isEmpty() && needles[2].size() == disks;
-        
+
     }
 
     /**

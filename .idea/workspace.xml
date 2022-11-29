@@ -6,17 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="29ed6fcd-5f40-48a4-b9ab-c20b7e1c19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/hanoi/Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/Hanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TestHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Stack.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hanoi/Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/Hanoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hanoi/HanoiDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/HanoiDisplayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestHanoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestStack.java" afterDir="false" />
->>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +51,8 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main">
-=======
-  <component name="RunManager" selected="Application.TestHanoi">
->>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
+
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LABO07" />
@@ -111,10 +101,7 @@
     </list>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
-=======
         <item itemvalue="Application.TestHanoi" />
->>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestStack" />
       </list>

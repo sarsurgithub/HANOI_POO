@@ -39,14 +39,12 @@ public class TestHanoi {
     /**
      * Construction de la tour de hanoi avec un nombre de disques < 1
      */
-    private static boolean testWrongDisk() {
+    private static void testWrongDisk() {
         try {
             hanoi = new Hanoi(0);
         } catch (RuntimeException e) {
             System.out.println(e.getMessage());
-            return false;
         }
-        return true;
 
     }
 
