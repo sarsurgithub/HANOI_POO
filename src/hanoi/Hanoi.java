@@ -6,10 +6,10 @@ import util.Stack;
  * @author Bogale Tegest & Jallon Sarah
  */
 public class Hanoi {
-    private Stack[] needles = new Stack[3];
-    private HanoiDisplayer hanoiDisplayer;
+    private final Stack[] needles = new Stack[3];
+    private final HanoiDisplayer hanoiDisplayer;
     private int cntTurn;
-    private int disks;
+    private final int disks;
 
 
     public void move(Stack src, Stack by, Stack dest, int n) { //t
@@ -22,8 +22,12 @@ public class Hanoi {
         move(by, dest, src, n - 1);
     }
 
-    public Hanoi(int disks, HanoiDisplayer displayer) { //s
-
+    public Hanoi(int disks, HanoiDisplayer hanoiDisplayer) { //s
+        this.disks = disks;
+        this.hanoiDisplayer = hanoiDisplayer;
+        for (int i = disks; i > 0; --i) {
+            needles[0].push(i);
+        }
     }
 
     public Hanoi(int disks) { //t
@@ -32,7 +36,12 @@ public class Hanoi {
     }
 
     public void solve() { //s
+        if (disks > 0) {
+            move(needles[0], needles[2], needles[1], disks - 1);
+            needles[2].push(needles[0]);
+            move(needles[1], needles[0], needles[2], disks - 1);
 
+        }
     }
 
     public int[][] status() { //t
@@ -49,7 +58,7 @@ public class Hanoi {
     }
 
     public boolean finished() { //s
-        return false;
+        return needles[0].size() == 0 && needles[1].size() == 0 && needles[3].size() == disks;
 
     }
 
