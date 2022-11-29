@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Labo7 - Hanoi - Bogale, Jallon">
+    <entity entityType="CLASS" id="2664" isAbstract="false" name="Class" visibility="PUBLIC"/>
+    <association aggregation="COMPOSE" direction="BIDIRECTIONAL" id="2638" name="compose &gt;">
+      <role componentId="1777" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="1780" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>0</min>
+          <max>2147483647</max>
+        </multiplicity>
+      </role>
+    </association>
+    <entity entityType="CLASS" id="1782" isAbstract="false" name="TestStack" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="1781" isAbstract="false" name="TestHanoi" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="1780" isAbstract="false" name="Element" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="data" type="Object" visibility="PACKAGE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="next" type="Element" visibility="PACKAGE"/>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Element" returnType="" view="DEFAULT" visibility="PACKAGE">
+        <variable const="false" name="data" type="Object"/>
+        <variable const="false" name="next" type="Element"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="1779" isAbstract="false" name="Examinator" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="current" type="Element" visibility="PRIVATE"/>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Examinator" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="el" type="Element"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="next" returnType="Object" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="hasNext" returnType="boolean" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="1778" isAbstract="false" name="HanoiDisplayer" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="display" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="h" type="Hanoi"/>
+      </method>
+    </entity>
+    <entity entityType="CLASS" id="1777" isAbstract="false" name="Stack" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="top" type="Element" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="size" type="int" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="push" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="o" type="Object"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="pop" returnType="Object" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="toString" returnType="String" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="stackToArray" returnType="Object[]" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="examinator" returnType="Examinator" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="size" returnType="int" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="isEmpty" returnType="boolean" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="1776" isAbstract="false" name="HanoiDisplayer" visibility="PUBLIC"/>
+    <entity entityType="CLASS" id="1775" isAbstract="false" name="Hanoi" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="needles" type="Stack[]" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="hanoiDisplayer" type="HanoiDisplayer" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="cntTurn" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="disks" type="int" visibility="PRIVATE"/>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Hanoi" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="disks" type="int"/>
+      </method>
+      <method is-constructor="true" isAbstract="false" isStatic="false" name="Hanoi" returnType="" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="disks" type="int"/>
+        <variable const="false" name="HanoiDisplayer" type="hanoiDisplayer"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="move" returnType="void" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="Stack" type="src"/>
+        <variable const="false" name="Stack" type="by"/>
+        <variable const="false" name="Stack" type="dest"/>
+        <variable const="false" name="int" type="n"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="solve" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="status" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="finished" returnType="boolean" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="turn" returnType="int" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="toString" returnType="String" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <relationView color="-12566464" relationId="2638">
+      <line>
+        <point>
+          <x>851</x>
+          <y>71</y>
+        </point>
+        <point>
+          <x>651</x>
+          <y>71</y>
+        </point>
+        <point>
+          <x>651</x>
+          <y>71</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>723</x>
+        <y>77</y>
+        <w>68</w>
+        <h>17</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>794</x>
+        <y>21</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>654</x>
+        <y>79</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>837</x>
+        <y>48</y>
+        <w>8</w>
+        <h>17</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>655</x>
+        <y>48</y>
+        <w>21</w>
+        <h>17</h>
+      </multipliciteAssociation>
+    </relationView>
+    <componentView color="-2079" componentID="1775" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>10</x>
+        <y>50</y>
+        <w>330</w>
+        <h>235</h>
+      </geometry>
+    </componentView>
+    <componentView color="-3342388" componentID="1777" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>850</x>
+        <y>50</y>
+        <w>240</w>
+        <h>190</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="1778" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>10</x>
+        <y>360</y>
+        <w>330</w>
+        <h>70</h>
+      </geometry>
+    </componentView>
+    <componentView color="-3342388" componentID="1779" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>410</x>
+        <y>210</y>
+        <w>240</w>
+        <h>115</h>
+      </geometry>
+    </componentView>
+    <componentView color="-3342388" componentID="1780" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>410</x>
+        <y>50</y>
+        <w>240</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <note color="-2079" content="CI: Le nombre de disque doit être supérieur à 0">
+      <noteGeometry>
+        <x>10</x>
+        <y>290</y>
+        <w>170</w>
+        <h>45</h>
+      </noteGeometry>
+    </note>
+  </umlView>
+</classDiagram>
