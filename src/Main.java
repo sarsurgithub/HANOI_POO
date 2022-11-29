@@ -1,16 +1,25 @@
 import hanoi.Hanoi;
-import hanoi.HanoiDisplayer;
 import hanoi.gui.JHanoi;
-import util.Stack;
 
+
+/**
+ * Permet de lancer le programme en ligne de commande ou avec l'interface graphique
+ *
+ * @author Bogale Tegest & Jallon Sarah
+ */
 public class Main {
-
+    /**
+     * Lance le programme en ligne de commande ou avec l'interface graphique
+     * @param args arguments donnés en ligne de commande
+     * @throws RuntimeException si le nombre de disques est < 1 ou si hanoi Displayer est null
+     *
+     */
     public static void main(String[] args) {
-        if(args.length == 1){
+        if (args.length == 1) {
             Hanoi hanoi = new Hanoi(Integer.parseInt(args[0]));
             hanoi.solve();
         } else if (args.length == 0) {
-            JHanoi j = new JHanoi();
+            new JHanoi();
         } else {
             System.out.println("To use the interface run the program without arguments");
             System.out.println("To use the console run the program with the number of disks");
