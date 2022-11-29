@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
 <classDiagram>
   <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Labo7 - Hanoi - Bogale, Jallon">
+    <entity entityType="CLASS" id="2758" isAbstract="false" name="Class" visibility="PUBLIC"/>
+    <association aggregation="NONE" direction="BIDIRECTIONAL" id="2728" name="">
+      <role componentId="1775" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="1778" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+    </association>
+    <association aggregation="NONE" direction="BIDIRECTIONAL" id="2683" name="possède &lt;">
+      <role componentId="1779" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>0</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="1777" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+    </association>
+    <association aggregation="NONE" direction="BIDIRECTIONAL" id="2669" name="pointe sur ^">
+      <role componentId="1780" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>1</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+      <role componentId="1779" name="" visibility="PRIVATE">
+        <multiplicity>
+          <min>0</min>
+          <max>1</max>
+        </multiplicity>
+      </role>
+    </association>
     <entity entityType="CLASS" id="2664" isAbstract="false" name="Class" visibility="PUBLIC"/>
     <association aggregation="COMPOSE" direction="BIDIRECTIONAL" id="2638" name="compose &gt;">
       <role componentId="1777" name="" visibility="PRIVATE">
@@ -82,95 +125,249 @@
     <relationView color="-12566464" relationId="2638">
       <line>
         <point>
-          <x>851</x>
-          <y>71</y>
+          <x>1041</x>
+          <y>151</y>
         </point>
         <point>
-          <x>651</x>
-          <y>71</y>
+          <x>841</x>
+          <y>151</y>
         </point>
         <point>
-          <x>651</x>
-          <y>71</y>
+          <x>841</x>
+          <y>151</y>
         </point>
       </line>
       <labelAssociation>
-        <x>723</x>
-        <y>77</y>
+        <x>903</x>
+        <y>126</y>
         <w>68</w>
         <h>17</h>
       </labelAssociation>
       <roleAssociation>
-        <x>794</x>
-        <y>21</y>
+        <x>984</x>
+        <y>101</y>
         <w>0</w>
         <h>17</h>
       </roleAssociation>
       <roleAssociation>
-        <x>654</x>
-        <y>79</y>
+        <x>844</x>
+        <y>159</y>
         <w>0</w>
         <h>17</h>
       </roleAssociation>
       <multipliciteAssociation>
-        <x>837</x>
-        <y>48</y>
+        <x>1013</x>
+        <y>156</y>
         <w>8</w>
         <h>17</h>
       </multipliciteAssociation>
       <multipliciteAssociation>
-        <x>655</x>
-        <y>48</y>
+        <x>845</x>
+        <y>128</y>
         <w>21</w>
+        <h>17</h>
+      </multipliciteAssociation>
+    </relationView>
+    <relationView color="-12566464" relationId="2669">
+      <line>
+        <point>
+          <x>731</x>
+          <y>231</y>
+        </point>
+        <point>
+          <x>731</x>
+          <y>401</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>742</x>
+        <y>307</y>
+        <w>76</w>
+        <h>17</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>735</x>
+        <y>235</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>735</x>
+        <y>378</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>738</x>
+        <y>234</y>
+        <w>8</w>
+        <h>17</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>705</x>
+        <y>379</y>
+        <w>23</w>
+        <h>17</h>
+      </multipliciteAssociation>
+    </relationView>
+    <relationView color="-12566464" relationId="2683">
+      <line>
+        <point>
+          <x>841</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>1201</x>
+          <y>481</y>
+        </point>
+        <point>
+          <x>1201</x>
+          <y>321</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>996</x>
+        <y>454</y>
+        <w>64</w>
+        <h>17</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>845</x>
+        <y>485</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>1205</x>
+        <y>325</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>854</x>
+        <y>453</y>
+        <w>23</w>
+        <h>17</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>1182</x>
+        <y>326</y>
+        <w>8</w>
+        <h>17</h>
+      </multipliciteAssociation>
+    </relationView>
+    <relationView color="-12566464" relationId="2728">
+      <line>
+        <point>
+          <x>351</x>
+          <y>366</y>
+        </point>
+        <point>
+          <x>351</x>
+          <y>481</y>
+        </point>
+      </line>
+      <labelAssociation>
+        <x>355</x>
+        <y>427</y>
+        <w>0</w>
+        <h>17</h>
+      </labelAssociation>
+      <roleAssociation>
+        <x>355</x>
+        <y>370</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <roleAssociation>
+        <x>355</x>
+        <y>458</y>
+        <w>0</w>
+        <h>17</h>
+      </roleAssociation>
+      <multipliciteAssociation>
+        <x>337</x>
+        <y>370</y>
+        <w>8</w>
+        <h>17</h>
+      </multipliciteAssociation>
+      <multipliciteAssociation>
+        <x>337</x>
+        <y>458</y>
+        <w>8</w>
         <h>17</h>
       </multipliciteAssociation>
     </relationView>
     <componentView color="-2079" componentID="1775" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>10</x>
-        <y>50</y>
+        <x>110</x>
+        <y>130</y>
         <w>330</w>
         <h>235</h>
       </geometry>
     </componentView>
     <componentView color="-3342388" componentID="1777" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>850</x>
-        <y>50</y>
+        <x>1040</x>
+        <y>130</y>
         <w>240</w>
         <h>190</h>
       </geometry>
     </componentView>
     <componentView color="-2079" componentID="1778" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>10</x>
-        <y>360</y>
+        <x>110</x>
+        <y>480</y>
         <w>330</w>
         <h>70</h>
       </geometry>
     </componentView>
     <componentView color="-3342388" componentID="1779" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>410</x>
-        <y>210</y>
+        <x>600</x>
+        <y>400</y>
         <w>240</w>
         <h>115</h>
       </geometry>
     </componentView>
     <componentView color="-3342388" componentID="1780" displayAttributes="true" displayDefault="true" displayMethods="true">
       <geometry>
-        <x>410</x>
-        <y>50</y>
+        <x>600</x>
+        <y>130</y>
         <w>240</w>
         <h>100</h>
       </geometry>
     </componentView>
     <note color="-2079" content="CI: Le nombre de disque doit être supérieur à 0">
       <noteGeometry>
-        <x>10</x>
-        <y>290</y>
+        <x>110</x>
+        <y>370</y>
         <w>170</w>
         <h>45</h>
+      </noteGeometry>
+    </note>
+    <note color="-2079" content="Package Hanoi">
+      <noteGeometry>
+        <x>230</x>
+        <y>60</y>
+        <w>107</w>
+        <h>30</h>
+      </noteGeometry>
+    </note>
+    <note color="-3342388" content="Package Util">
+      <noteGeometry>
+        <x>890</x>
+        <y>60</y>
+        <w>95</w>
+        <h>30</h>
+      </noteGeometry>
+    </note>
+    <note color="-3342388" content="CI: un examinator point sur un elément appartenant à la Stack l'ayant initialisé">
+      <noteGeometry>
+        <x>850</x>
+        <y>500</y>
+        <w>210</w>
+        <h>60</h>
       </noteGeometry>
     </note>
   </umlView>
