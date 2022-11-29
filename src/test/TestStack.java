@@ -9,6 +9,7 @@ import java.util.EmptyStackException;
 /**
  * Classe de test mettant en œuvre toutes les fonctionnalités des classes du package util,
  * soit Stack, Element et Examinator
+ * @author Bogale Tegest & Jallon Sarah
  */
 public class TestStack {
     private static final String passed = "Passed";

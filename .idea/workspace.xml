@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="29ed6fcd-5f40-48a4-b9ab-c20b7e1c19f8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/hanoi/Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/Hanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TestHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestHanoi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Stack.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hanoi/Hanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/Hanoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hanoi/HanoiDisplayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hanoi/HanoiDisplayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestHanoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestStack.java" afterDir="false" />
+>>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +58,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Main">
+=======
+  <component name="RunManager" selected="Application.TestHanoi">
+>>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LABO07" />
@@ -62,6 +74,19 @@
     <configuration name="TestHanoi" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="test.TestHanoi" />
       <module name="LABO07" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestHanoi" />
+      <module name="LABO07" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +111,10 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+=======
+        <item itemvalue="Application.TestHanoi" />
+>>>>>>> f32b53e42e053d6ec2c743f760e29dc6cab00e1b
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestStack" />
       </list>
@@ -104,7 +133,11 @@
       <workItem from="1668690089638" duration="2686000" />
       <workItem from="1669208722548" duration="3276000" />
       <workItem from="1669623677818" duration="17403000" />
-      <workItem from="1669662733866" duration="9990000" />
+      <workItem from="1669662733866" duration="12179000" />
+      <workItem from="1669728356761" duration="1209000" />
+      <workItem from="1669730209732" duration="692000" />
+      <workItem from="1669731046954" duration="258000" />
+      <workItem from="1669737235596" duration="5789000" />
     </task>
     <servers />
   </component>
