@@ -48,7 +48,6 @@ public class TestHanoi {
 
     }
 
-
     /**
      * Teste l'algorithme pour la résolution et la méthode finished()
      */
